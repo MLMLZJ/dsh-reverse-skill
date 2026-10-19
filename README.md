@@ -5,6 +5,10 @@ A DeepSeek Harness **bundle** that registers one model-invocable skill,
 (or the whole bundle) in Plugin Manager and the skill disappears from the session
 catalog; enable it again and it comes back.
 
+Repository: <https://github.com/MLMLZJ/dsh-reverse-skill>
+Companion plugin: <https://github.com/MLMLZJ/dsh-install-profiler> (installation
+profiling, dynamic probing, and the handoff brief that feeds this skill).
+
 Inspired by the viral "REA — Reverse Engineer Anything" project
 (<https://github.com/morluto/rea>), which popularized agent-driven reverse
 engineering after adding Android/APK analysis in October 2026. This plugin is an
@@ -23,11 +27,19 @@ not REA's engine or MCP server.
 
 ## Install (once)
 
-From a DSH session with Full access or approval:
+```powershell
+git clone https://github.com/MLMLZJ/dsh-reverse-skill.git C:\Tools\dsh-reverse-skill
+```
+
+Then, from a DSH session with Full access or approval:
 
 ```
-plugin_manager action=install_bundle target=<absolute path to this directory>
+plugin_manager action=install_bundle target=C:\Tools\dsh-reverse-skill
 ```
+
+The install is a **link**: keep that directory in place, or the plugin breaks.
+To update later: `git pull` in that directory, then toggle the row off and on
+(the `SKILL.md` body is re-read on activation).
 
 Then confirm the row is active with `plugin_manager list_plugins` (look for
 `reverse-skill`) or approval-free `cordis_inspect_query` on the `Config`
