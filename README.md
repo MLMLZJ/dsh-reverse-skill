@@ -6,6 +6,7 @@ A DeepSeek Harness **bundle** that registers one model-invocable skill,
 catalog; enable it again and it comes back.
 
 Repository: <https://github.com/MLMLZJ/dsh-reverse-skill>
+Index: <https://github.com/MLMLZJ/dsh-plugins>
 Companion plugin: <https://github.com/MLMLZJ/dsh-install-profiler> (installation
 profiling, dynamic probing, and the handoff brief that feeds this skill).
 
