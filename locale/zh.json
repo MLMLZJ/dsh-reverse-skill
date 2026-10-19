@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "逆向工程工具箱",
+    "description": "添加一个可开关的逆向/反编译技能：自动探测已安装的反编译工具，并驱动 jadx、apktool、adb、Frida、Ghidra、rizin、ILSpy 分析 APK、原生二进制与 .NET 程序。"
+  }
+}

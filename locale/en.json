@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Reverse Engineering Toolkit",
+    "description": "Adds a switchable reverse-engineering skill that probes installed decompilers and drives jadx, apktool, adb, Frida, Ghidra, rizin, and ILSpy to analyze APKs, native binaries, and .NET assemblies."
+  }
+}
